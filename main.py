@@ -48,6 +48,13 @@ optim = 'Accelerated-TRAD' # 'no_reg', 'TV', 'DD', 'Vanilla-TRAD', 'Accelerated-
 alpha = [1./384] # for TV
 num_channels = [128, 128, 128, 128] # number of channels in each layer of network
 
+if os.path.exists('inter') == False:
+    os.mkdir('inter')
+if os.path.exists('output') == False:
+    os.mkdir('output')
+if os.path.exists('output' + optim) == False:
+    os.mkdir('output/' + optim)
+
 for i in range(len(rr)):
     max_psnr = 0
     for j in range(circ_num):

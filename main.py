@@ -40,11 +40,11 @@ import time
 data = open('data.csv', 'w', encoding = 'utf8', newline = '')
 writer = csv.writer(data)
 
-dataset = 'Cameraman' # 'Cameraman', 'Pepper', 'Boat', 'Ecoli', 'Tucson', 'Stadium'
+dataset = 'Cameraman' # 'Cameraman', 'StreamandBridge', 'Stadium', 'Tucson', 'ButterflyNebula', 'PillarsofCreation'
 filename = 'Cameraman.png'
 rr = [2.0, 1.8, 1.6] # sampling ratio
 circ_num = 1 # number of runs at each sampling ratio
-optim = 'Accelerated-TRAD' # 'no_reg', 'TV', 'DD', 'Vanilla-TRAD', 'Accelerated-TRAD'
+optim = 'Accelerated-TRAD' # 'Vanilla-TRAD', 'Accelerated-TRAD'
 alpha = [1./384] # for TV
 num_channels = [128, 128, 128, 128] # number of channels in each layer of network
 

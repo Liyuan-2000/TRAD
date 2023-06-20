@@ -52,7 +52,7 @@ if os.path.exists('inter') == False:
     os.mkdir('inter')
 if os.path.exists('output') == False:
     os.mkdir('output')
-if os.path.exists('output' + optim) == False:
+if os.path.exists('output/' + optim) == False:
     os.mkdir('output/' + optim)
 
 for i in range(len(rr)):
